@@ -1,9 +1,10 @@
-from collections import deque 
+#from collections import deque 
+from Stack import Stack
 
 def bfs(root_node, goal_value):
-    path_queue = deque()
+    path_queue = Stack()
     initial_path = [root_node]
-    path_queue.appendleft(initial_path)
+    path_queue.push(initial_path)
 
     while path_queue:
         current_path = path_queue.pop()
@@ -15,6 +16,6 @@ def bfs(root_node, goal_value):
         for child in current_node.children:
             new_path = current_path[:]
             new_path.append(child)
-            path_queue.appendleft(new_path)
+            path_queue.push(new_path)
 
     return None 

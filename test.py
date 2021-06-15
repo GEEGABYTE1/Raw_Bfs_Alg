@@ -18,10 +18,12 @@ test3.add_child(test7)
 ########################
 
 
-goal_path = bfs(test, 7)
+goal_path = bfs(test, 5)
 
 if goal_path == None:
     print("No path found! ")
 else:
+    print('-'*24)
+    print("Path found! ")
     for node in goal_path:
         print(node.value)

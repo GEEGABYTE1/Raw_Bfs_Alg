@@ -57,10 +57,11 @@ class Stack:
 
 
 ## Test inputs ###
-test = Stack()
+'''test = Stack()
 test.push(1)
 test.push(2)
 test.push(3)
 print(test.peek())
 test.pop()
-print(test.peek())
+print(test.peek())'''
+###
